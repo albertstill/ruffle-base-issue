@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <script src="/public/ruffle/2021-09-04/ruffle.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/swfobject/2.2/swfobject.js"
+        integrity="sha512-3hmEkIdoEXzA8s36qxAzUupTo0P0tGyfAvKpnARYc5zOWTiuwnYux1DT8Jt0MRpm2vq1FlesIim59nt5bzxpUw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<div id="flash-div"></div>
+<script>
+    const initialSwf = '/public/game/base.swf';
+
+    const parObj = {
+        base: '/public/game/'
+    };
+
+    swfobject.embedSWF(
+        initialSwf,
+        'flash-div',
+        1014,
+        461,
+        '9.0.16',
+        undefined,
+        null,
+        parObj,
+        null
+    );
+</script>
+
+</html>
